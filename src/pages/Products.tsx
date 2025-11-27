@@ -18,9 +18,9 @@ const Products: React.FC = () => {
                 <div className="flex flex-wrap justify-center gap-4 mb-12">
                     <button
                         onClick={() => setSelectedCategory('All')}
-                        className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${selectedCategory === 'All'
-                            ? 'bg-brand text-white'
-                            : 'bg-white text-slate-600 hover:bg-slate-200'
+                        className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${selectedCategory === 'All'
+                            ? 'bg-gradient-to-r from-blue-600 to-cyan-400 text-white shadow-lg scale-105'
+                            : 'bg-white/50 backdrop-blur-sm border border-slate-200 text-slate-600 hover:bg-white hover:shadow-md'
                             }`}
                     >
                         All
@@ -29,9 +29,9 @@ const Products: React.FC = () => {
                         <button
                             key={category}
                             onClick={() => setSelectedCategory(category)}
-                            className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${selectedCategory === category
-                                ? 'bg-brand text-white'
-                                : 'bg-white text-slate-600 hover:bg-slate-200'
+                            className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${selectedCategory === category
+                                ? 'bg-gradient-to-r from-blue-600 to-cyan-400 text-white shadow-lg scale-105'
+                                : 'bg-white/50 backdrop-blur-sm border border-slate-200 text-slate-600 hover:bg-white hover:shadow-md'
                                 }`}
                         >
                             {category}

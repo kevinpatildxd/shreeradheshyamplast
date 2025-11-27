@@ -7,7 +7,7 @@ interface TestimonialCardProps {
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
     return (
-        <div className="bg-white p-6 rounded-lg shadow-md border border-slate-200">
+        <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-lg shadow-lg">
             <div className="flex items-center mb-4">
                 {[...Array(5)].map((_, i) => (
                     <svg
