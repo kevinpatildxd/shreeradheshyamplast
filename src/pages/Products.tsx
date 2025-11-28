@@ -19,7 +19,7 @@ const Products: React.FC = () => {
                     <button
                         onClick={() => setSelectedCategory('All')}
                         className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${selectedCategory === 'All'
-                            ? 'bg-gradient-to-r from-blue-600 to-cyan-400 text-white shadow-lg scale-105'
+                            ? 'bg-slate-900 text-white shadow-lg scale-105'
                             : 'bg-white/50 backdrop-blur-sm border border-slate-200 text-slate-600 hover:bg-white hover:shadow-md'
                             }`}
                     >
@@ -30,7 +30,7 @@ const Products: React.FC = () => {
                             key={category}
                             onClick={() => setSelectedCategory(category)}
                             className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${selectedCategory === category
-                                ? 'bg-gradient-to-r from-blue-600 to-cyan-400 text-white shadow-lg scale-105'
+                                ? 'bg-slate-900 text-white shadow-lg scale-105'
                                 : 'bg-white/50 backdrop-blur-sm border border-slate-200 text-slate-600 hover:bg-white hover:shadow-md'
                                 }`}
                         >

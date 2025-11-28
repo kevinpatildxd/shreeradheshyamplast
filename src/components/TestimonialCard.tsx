@@ -7,12 +7,12 @@ interface TestimonialCardProps {
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
     return (
-        <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-lg shadow-lg">
-            <div className="flex items-center mb-4">
+        <div className="bg-white/60 backdrop-blur-xl border border-white/40 p-8 rounded-lg shadow-sm hover:-translate-y-2 hover:shadow-lg transition-all duration-500">
+            <div className="flex items-center mb-6">
                 {[...Array(5)].map((_, i) => (
                     <svg
                         key={i}
-                        className={`w-5 h-5 ${i < testimonial.rating ? 'text-yellow-400' : 'text-slate-300'}`}
+                        className={`w-5 h-5 ${i < testimonial.rating ? 'text-yellow-500' : 'text-slate-300'}`}
                         fill="currentColor"
                         viewBox="0 0 20 20"
                     >
@@ -20,11 +20,11 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
                     </svg>
                 ))}
             </div>
-            <p className="text-slate-600 italic mb-4">"{testimonial.content}"</p>
+            <p className="text-slate-700 italic mb-6 leading-relaxed">"{testimonial.content}"</p>
             <div>
-                <h4 className="font-bold text-text-main">{testimonial.name}</h4>
+                <h4 className="font-bold text-slate-900">{testimonial.name}</h4>
                 {testimonial.company && (
-                    <p className="text-sm text-slate-500">{testimonial.company}</p>
+                    <p className="text-sm text-slate-500 font-medium">{testimonial.company}</p>
                 )}
             </div>
         </div>

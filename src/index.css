@@ -19,3 +19,10 @@
 .jelly:active {
     @apply scale-95 transition-transform duration-100;
 }
+
+/* Creates a very subtle mesh gradient so glass effects are visible */
+body {
+    background-color: #F8FAFC;
+    min-height: 100vh;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
